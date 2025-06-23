@@ -7,3 +7,9 @@
     text-align: center;
     color: $black-80;
 }
+
+@mixin h5-light {
+    font-weight: 400;
+    font-size: 14px;
+    color: $black-80;
+}

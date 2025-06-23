@@ -27,14 +27,29 @@
             }
         }
 
-
         &-nav {
 
             ul {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
+
+                a {
+                    text-decoration: none;
+                }
             }
+        }
+
+        &-address {
+            display: flex;
+            align-items: center;
+        }
+
+        &-wrapper {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background-color: $white;
         }
     }
 }
