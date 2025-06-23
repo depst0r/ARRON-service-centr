@@ -4,6 +4,13 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+
+        &-phone {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 23px;
+        }
     }
 
     &__menu {
@@ -28,8 +35,10 @@
         }
 
         &-nav {
+            margin-top: 40px;
 
             ul {
+                padding: 0;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
@@ -43,6 +52,8 @@
         &-address {
             display: flex;
             align-items: center;
+            column-gap: 7px;
+            margin-top: 25px;
         }
 
         &-wrapper {
@@ -50,6 +61,25 @@
             width: 100vw;
             height: 100vh;
             background-color: $white;
+            padding: 15px 10px 10px 30px;
+        }
+
+        &-map a {
+            color: $blue-light;
+        }
+
+        &-phone {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-call {
+            display: flex;
+            padding: 16px;
+            border-radius: 15px;
+            background-color: $red-shadow;
+            width: 48px;
+            height: 48px;
         }
     }
 }
