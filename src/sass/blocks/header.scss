@@ -1,6 +1,8 @@
 @use '/src/sass/base/variables.scss'as *;
 
 .header {
+    padding-top: 15px;
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -31,8 +33,11 @@
                 width: 100%;
                 background-color: $black-80;
                 height: 3px;
+                transition: all 0.5s;
 
-                &-close {
+                &_close {
+                    transition: all 0.5s;
+
                     &:nth-child(1) {
                         transform: translateY(8px) rotate(45deg);
                     }
@@ -40,12 +45,15 @@
                     &:nth-child(2) {
                         transform: translateY(-5px) rotate(-45deg);
                     }
+
+                    &:nth-child(3) {
+                        display: none;
+                    }
                 }
             }
         }
 
         &-nav {
-            margin-top: 40px;
 
             ul {
                 padding: 0;
@@ -67,11 +75,21 @@
         }
 
         &-wrapper {
-            position: absolute;
+            position: fixed;
             width: 100vw;
             height: 100vh;
             background-color: $white;
             padding: 10px 15px 30px;
+            z-index: 1;
+            transition: all 0.5s;
+            right: 100%;
+            margin-top: 60px;
+
+            &_active {
+                right: 0;
+
+
+            }
         }
 
         &-map a {
