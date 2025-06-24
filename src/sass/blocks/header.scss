@@ -2,10 +2,12 @@
 
 .header {
     padding-top: 15px;
+    z-index: 99;
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         &-phone {
             display: flex;
@@ -54,6 +56,7 @@
         }
 
         &-nav {
+            margin-top: 77px;
 
             ul {
                 padding: 0;
@@ -87,8 +90,6 @@
 
             &_active {
                 right: 0;
-
-
             }
         }
 
@@ -99,6 +100,11 @@
         &-phone {
             display: flex;
             flex-direction: column;
+            gap: 8px;
+
+            a {
+                text-decoration: none;
+            }
         }
 
         &-call {
@@ -108,6 +114,74 @@
             background-color: $red-shadow;
             width: 48px;
             height: 48px;
+        }
+    }
+
+    .wide {
+        display: none;
+    }
+
+    .lg {
+        display: none;
+        margin-top: 0;
+        margin-right: 20%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding-bottom: 30px;
+        border-radius: 25px;
+        box-shadow: 0 5px 20px 0 #cddae1;
+
+        &__menu-wrapper {
+            width: 50vw;
+
+            &_active {
+                right: 50%;
+            }
+        }
+    }
+
+
+    .wide {
+        display: flex !important;
+        margin: 0;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+        }
+
+        .header__menu-phone {
+            flex-direction: row;
+            gap: 8px;
+
+            span {
+                opacity: 0.2;
+            }
+        }
+    }
+
+    .hiden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        padding-top: 30px;
+
+        &__menu {
+            display: none;
+        }
+    }
+
+    .lg {
+        display: block !important;
+
+        ul {
+            flex-direction: row;
         }
     }
 }
