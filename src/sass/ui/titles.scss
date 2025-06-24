@@ -1,5 +1,9 @@
 @use '/src/sass/base/mixins.scss'as *;
 
+.title-h1 {
+    @include h1;
+}
+
 .title-h5-bold {
     @include h5-bold;
 }

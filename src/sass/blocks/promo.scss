@@ -1,0 +1,16 @@
+.promo {
+    position: relative;
+    padding-top: 18px;
+
+    &__img-svg {
+        display: flex;
+
+        img {
+            position: absolute;
+
+            &:nth-child(2) {
+                right: 0;
+            }
+        }
+    }
+}
