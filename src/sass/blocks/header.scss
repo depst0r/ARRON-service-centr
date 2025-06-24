@@ -31,6 +31,16 @@
                 width: 100%;
                 background-color: $black-80;
                 height: 3px;
+
+                &-close {
+                    &:nth-child(1) {
+                        transform: translateY(8px) rotate(45deg);
+                    }
+
+                    &:nth-child(2) {
+                        transform: translateY(-5px) rotate(-45deg);
+                    }
+                }
             }
         }
 
