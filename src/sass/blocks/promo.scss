@@ -107,6 +107,8 @@
     }
 
     &__sale {
+        margin-top: 44px;
+
         .sale {
             &__title {
                 position: relative;
@@ -135,6 +137,32 @@
 
                 span {
                     font-weight: 700;
+                }
+            }
+
+            &__timer {
+                margin-top: 20px;
+
+                .timer {
+                    &__number-wrapper {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 8px;
+                        gap: 2px;
+                    }
+
+                    &__diviver {
+                        font-size: 18px;
+                    }
+
+                    &__number {
+                        font-size: 26px;
+                    }
+
+                    &__text {
+                        font-size: 11px;
+                        opacity: 0.5;
+                    }
                 }
             }
         }
