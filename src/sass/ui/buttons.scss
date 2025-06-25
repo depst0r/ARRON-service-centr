@@ -1,0 +1,10 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.btn-lg {
+    border-radius: 15px;
+    padding: 10px;
+    width: 233px;
+    height: 48px;
+    background-color: $red;
+    border: none;
+}

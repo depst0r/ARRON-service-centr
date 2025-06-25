@@ -25,3 +25,12 @@
     font-size: 14px;
     color: $black-80;
 }
+
+@mixin btn-text {
+    font-family: 'regular';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: -0.01em;
+    color: $white;
+}
