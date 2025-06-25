@@ -4,6 +4,10 @@
     position: relative;
     padding-top: 58px;
 
+    &__sub {
+        color: $gray;
+    }
+
     &__circle {
         position: relative;
         width: $circle-size;
@@ -123,6 +127,14 @@
                     background-size: cover;
                     left: 48%;
                     top: 2%;
+                }
+            }
+
+            &__subtitle {
+                color: $black-80;
+
+                span {
+                    font-weight: 700;
                 }
             }
         }

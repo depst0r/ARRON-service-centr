@@ -12,6 +12,10 @@
     @include h5-light;
 }
 
+.sub {
+    @include sub;
+}
+
 .title-btn {
     @include btn-text;
 }
