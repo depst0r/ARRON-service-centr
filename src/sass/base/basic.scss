@@ -24,11 +24,6 @@ li {
 
 body {
     font-family: "gilroy-light";
-    background: linear-gradient(180deg, #ebf3f8 0%, rgba(235, 243, 248, 0) 100%);
-}
-
-section {
-    background: linear-gradient(180deg, #ebf3f8 0%, rgba(235, 243, 248, 0) 100%);
 }
 
 h1,
@@ -78,5 +73,11 @@ img {
     .container {
         padding: 0 24px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 0 120px;
     }
 }

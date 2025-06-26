@@ -3,6 +3,7 @@
 .promo {
     position: relative;
     padding-top: 58px;
+    background: linear-gradient(180deg, #ebf3f8 0%, rgba(235, 243, 248, 0) 100%);
 
     &__sub {
         color: $gray;
@@ -195,6 +196,7 @@
 
         &__sub {
             font-size: 24px;
+            white-space: pre-lineж
         }
 
         &__sale {
@@ -264,6 +266,67 @@
 
             &:nth-child(2) {
                 right: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .overlay {
+        display: none;
+    }
+
+    .promo {
+        &__wrapper {
+            flex-direction: row;
+            gap: 60px;
+        }
+
+        &__circle {
+            flex: 1 0 50%;
+            order: 2;
+            height: 607px;
+
+            &-image {
+                &:nth-child(6) {
+                    left: -118%;
+                }
+
+                &:nth-child(7) {
+                    left: 103%;
+                }
+            }
+        }
+
+        &__sale {
+            position: absolute;
+            width: 264px;
+            left: 78%;
+            top: 21%;
+            z-index: 2;
+        }
+
+        .sale {
+            &__title {
+                position: absolute;
+                left: 10%;
+
+                &::before {
+                    left: 62%;
+                    top: 54%;
+                }
+            }
+
+            &__subtitle {
+                padding-left: 30px;
+                width: 90%;
+            }
+
+            &__wrapper {
+                width: 264px;
+                height: 309px;
+                flex-direction: column;
+                gap: 22px;
             }
         }
     }
