@@ -111,14 +111,16 @@
 
         .sale {
             &__title {
-                position: relative;
+                display: block;
+                position: absolute;
+                top: -45px;
+                left: 72px;
                 font-family: 'Bebas Neue';
                 font-weight: 700;
                 font-size: 113px;
                 letter-spacing: -0.01em;
                 color: $orange;
-                text-shadow: 2px 2px 0 rgba(255, 107, 0, 0.03),
-                    5px 4px 0 rgba(255, 107, 0, 0.04);
+                text-shadow: 2px 16px 21px rgba(255, 107, 0, 0.29);
 
                 &::before {
                     content: '';
@@ -164,6 +166,21 @@
                         opacity: 0.5;
                     }
                 }
+            }
+
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                position: relative;
+                border-radius: 30px;
+                box-shadow: 0 3px 4px 0 rgba(255, 107, 0, 0.04),
+                    0 9px 10px 0 rgba(255, 107, 0, 0.05),
+                    0 21px 24px 0 rgba(255, 107, 0, 0.07),
+                    0 71px 80px 0 rgba(255, 107, 0, 0.11);
+                background: $white;
+                width: 300px;
+                height: 233px;
             }
         }
     }
