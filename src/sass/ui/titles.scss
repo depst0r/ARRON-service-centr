@@ -2,6 +2,9 @@
 
 .title-h1 {
     @include h1;
+    font-size: clamp(32px,
+            calc(32px + (110 - 32) * ((100vw - 320px) / (1920 - 320))),
+            110px);
 }
 
 .title-h5-bold {
