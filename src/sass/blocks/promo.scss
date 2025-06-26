@@ -282,6 +282,20 @@
             gap: 60px;
         }
 
+        &__text {
+            align-items: flex-start;
+        }
+
+        &__title,
+        &__button {
+            display: flex;
+            align-items: flex-start;
+
+            h1 {
+                text-align: left;
+            }
+        }
+
         &__circle {
             flex: 1 0 50%;
             order: 2;
