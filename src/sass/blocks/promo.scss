@@ -109,6 +109,8 @@
 
     &__sale {
         margin-top: 76px;
+        display: flex;
+        justify-content: center;
 
         .sale {
             &__title {
@@ -184,6 +186,15 @@
                 width: 300px;
                 height: 233px;
             }
+
+            &__line {
+                display: none;
+                width: 205px;
+                translate: (28px);
+                height: 1px;
+                background: $black-80;
+                opacity: 0.1;
+            }
         }
     }
 }
@@ -227,7 +238,7 @@
 
                 &__subtitle {
                     text-align: left;
-                    width: 85%;
+                    width: 80%;
                     font-size: 20px;
                 }
 
@@ -299,7 +310,7 @@
         &__circle {
             flex: 1 0 50%;
             order: 2;
-            height: 607px;
+            min-height: 111vh;
 
             &-image {
                 &:nth-child(6) {
@@ -331,6 +342,10 @@
                 }
             }
 
+            &__line {
+                display: block;
+            }
+
             &__subtitle {
                 padding-left: 30px;
                 width: 90%;
@@ -340,7 +355,44 @@
                 width: 264px;
                 height: 309px;
                 flex-direction: column;
-                gap: 22px;
+
+                &-lg {
+                    padding-top: 30px;
+                    gap: 22px;
+                }
+            }
+
+            &__timer {
+                padding-left: 30px;
+            }
+
+            .timer {
+                &__number-wrapper {
+                    gap: 15px;
+                }
+
+                &__numb {
+                    font-size: 32px;
+                }
+
+                &__text {
+                    font-size: 11px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .promo {
+        &__circle {
+            min-height: 815px;
+
+            &-image {
+                &:nth-child(6) {
+                    left: -108%;
+                }
             }
         }
     }
