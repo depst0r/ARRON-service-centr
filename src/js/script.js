@@ -1,3 +1,9 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import '/src/sass/style.scss';
 
 // Burger menu
@@ -24,5 +30,23 @@ const gamburgerMenu = (btnOpen, btnClose, burger) => {
 
     })
 }
+
+//Slider - work-devices
+
+const swiper = new Swiper(".work-devices__slider-swiper", {
+    modules: [Navigation, Pagination],
+    effect: "flip",
+    grabCursor: true,
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+    },
+});
 
 gamburgerMenu(menu, close, burger)

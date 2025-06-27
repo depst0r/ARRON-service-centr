@@ -7,6 +7,10 @@
             110px);
 }
 
+.title-h2 {
+    @include h2;
+}
+
 .title-h5-bold {
     @include h5-bold;
 }

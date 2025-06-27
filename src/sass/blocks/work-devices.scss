@@ -1,0 +1,21 @@
+.work-devices {
+    &__slider {
+        background-image: url('/src/img/sliders/bg.svg');
+        position: relative;
+
+        &-slide {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: start;
+
+            &__text {
+                display: inline;
+            }
+
+            img {
+                width: 200px;
+            }
+        }
+    }
+}

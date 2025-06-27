@@ -22,6 +22,7 @@
     "picomatch": "^4.0.2",
     "rollup": "^4.44.0",
     "source-map-js": "^1.2.1",
+    "swiper": "^11.2.8",
     "tinyglobby": "^0.2.14"
   }
 }
