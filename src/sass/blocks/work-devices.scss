@@ -1,9 +1,10 @@
+@use '/src/sass/base/variables.scss'as *;
+
 .work-devices {
     padding-top: 67px;
 
     &__slider {
         padding-top: 40px;
-        background-image: url('/src/img/sliders/bg.svg');
         position: relative;
 
         &-slide {
@@ -11,6 +12,7 @@
             align-items: center;
             flex-direction: column;
             text-align: start;
+            background-image: url('/src/img/sliders/bg.svg') no-repeat;
 
             &__text {
                 display: inline;
@@ -26,7 +28,58 @@
         }
 
         .swiper-pagination-bullet-active {
-            background-color: #e2001a;
+            background-color: $red;
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .work-devices {
+        .swiper {
+            display: none;
+
+            &-pagination,
+            &-button-next {
+                display: none;
+            }
+        }
+
+        &__item {
+            justify-items: center;
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, auto);
+
+            .item {
+                &__bg {
+                    background-image: url('/src/img/sliders/bg.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    width: 302px;
+                    height: 450px;
+                }
+
+                &__img {
+                    position: relative;
+                    width: 302px;
+                    height: 400px;
+
+                    img {
+                        width: 249px;
+                    }
+                }
+
+                &__text {
+                    position: absolute;
+                    bottom: 27%;
+                    left: 5%;
+                }
+            }
         }
     }
 }

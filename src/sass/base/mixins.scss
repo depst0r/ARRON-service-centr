@@ -50,3 +50,11 @@
     letter-spacing: -0.01em;
     color: $white;
 }
+
+@mixin slider-text {
+    font-family: "gilroy-light";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 136%;
+    color: #13171d;
+}

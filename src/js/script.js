@@ -45,7 +45,12 @@ const swiper = new Swiper(".work-devices__slider-swiper", {
         dynamicBullets: true,
     },
     navigation: {
-        nextEl: ".work-devices__slider-next",
+        nextEl: ".swiper-button-next",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 6,
+        }
     },
 });
 
