@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
+    font-family: "Bebas-Neue";
+    src: url("/src/font/BebasNeueBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: "gilroy-bold";
     src: url("/src/font/Gilroy-Bold.woff") format("woff");
     font-weight: normal;
