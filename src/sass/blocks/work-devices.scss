@@ -1,5 +1,8 @@
 .work-devices {
+    padding-top: 67px;
+
     &__slider {
+        padding-top: 40px;
         background-image: url('/src/img/sliders/bg.svg');
         position: relative;
 
@@ -16,6 +19,14 @@
             img {
                 width: 200px;
             }
+        }
+
+        .swiper-pagination {
+            bottom: -30px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #e2001a;
         }
     }
 }

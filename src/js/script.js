@@ -45,7 +45,7 @@ const swiper = new Swiper(".work-devices__slider-swiper", {
         dynamicBullets: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
+        nextEl: ".work-devices__slider-next",
     },
 });
 
