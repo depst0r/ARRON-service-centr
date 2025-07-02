@@ -11,6 +11,11 @@
     @include h2;
 }
 
+.title-h2-bold {
+    @include h2;
+    font-size: 26px;
+}
+
 .title-h5-bold {
     @include h5-bold;
 }

@@ -52,6 +52,13 @@
     color: $white;
 }
 
+@mixin button {
+    border-radius: 15px;
+    padding: 10px;
+    background-color: $red;
+    border: none;
+}
+
 @mixin slider-text {
     font-family: "gilroy-light";
     font-weight: 600;
