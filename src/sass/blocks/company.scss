@@ -1,26 +1,36 @@
 .company {
     background: linear-gradient(180deg, #d7dbdd 0%, rgba(235, 243, 248, 0) 100%);
+    margin-top: 30px;
 
-    &__section-first {
+    &__section {
         display: flex;
-        justify-content: center;
-        text-align: center;
         flex-direction: column;
-        align-items: center;
+        gap: 30px;
 
-        span {
-            margin-top: 10px;
+        &-first {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                margin-top: 10px;
+            }
+
+            button {
+                margin-top: 20px;
+            }
         }
 
-        button {
-            margin-top: 20px;
-        }
     }
+
 
     &__img-arrow {
         display: flex;
         justify-content: center;
         margin-top: 19px;
+        display: none;
 
         img {
             width: 55px;
@@ -31,10 +41,67 @@
         padding-top: 33px;
     }
 
-    &__card {
+    &__cards {
         display: flex;
         flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        gap: 10px;
+
+        .card {
+            &__sibtitle {
+                text-align: center;
+                align-items: center;
+            }
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .company {
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        &__card {
+            align-items: start;
+            justify-content: end;
+            gap: 24px;
+        }
+
+        .card {
+            &__info {
+                text-align: start;
+                align-items: start;
+                width: 336px;
+                gap: 16px;
+            }
+
+            &__title {
+                font-size: 20px;
+            }
+
+            &__subtitle {
+                font-size: 18px;
+            }
+        }
     }
 }
