@@ -14,3 +14,11 @@
     width: 233px;
     height: 48px;
 }
+
+@media screen and (min-width: 768px) {
+    .btn-sm {
+        width: 182px;
+        height: 64px;
+        font-size: 16px;
+    }
+}
