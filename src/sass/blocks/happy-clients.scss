@@ -8,6 +8,11 @@
         height: 100%;
         padding-bottom: 38px;
 
+        &-button-next,
+        &-button-prev {
+            display: none;
+        }
+
         &-wrapper {
             margin-top: 40px;
         }
@@ -31,9 +36,36 @@
         &-pagination-bullet-active {
             background-color: $red;
         }
+    }
+}
 
-        // &-pagination {
-        //     bottom: -10px;
-        // }
+@media screen and (min-width: 768px) {
+    .happy-clients {
+        .swiper {
+            &-wrapper {
+                &-slide {
+                    width: 100%;
+                }
+            }
+
+            &-button-next,
+            &-button-prev {
+                &::after {
+                    display: none;
+                }
+            }
+
+            &-button-next,
+            &-button-prev {
+                display: flex;
+                position: absolute;
+                top: 0;
+                width: 70px;
+            }
+
+            &-button-prev {
+                left: 80%;
+            }
+        }
     }
 }

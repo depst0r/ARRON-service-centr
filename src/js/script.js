@@ -57,13 +57,23 @@ const swiper = new Swiper(".work-devices__slider-swiper", {
 const swiper2 = new Swiper(".happy-clients__slider", {
     modules: [Navigation, Pagination],
     slidesPerView: "auto",
-    spaceBetween: 30,
+    spaceBetween: 20,
     loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
         dynamicBullets: true,
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+        }
+    },
+
 });
 
 gamburgerMenu(menu, close, burger)
