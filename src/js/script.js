@@ -54,4 +54,16 @@ const swiper = new Swiper(".work-devices__slider-swiper", {
     },
 });
 
+const swiper2 = new Swiper(".happy-clients__slider", {
+    modules: [Navigation, Pagination],
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+});
+
 gamburgerMenu(menu, close, burger)
