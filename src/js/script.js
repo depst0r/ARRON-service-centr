@@ -71,7 +71,11 @@ const swiper2 = new Swiper(".happy-clients__slider", {
     breakpoints: {
         768: {
             slidesPerView: 3,
-        }
+        },
+        1440: {
+            slidesPerView: 4,
+        },
+
     },
 
 });
