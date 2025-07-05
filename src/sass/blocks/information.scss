@@ -1,4 +1,5 @@
 .information {
+
     padding-top: 60px;
 
     &__column {
@@ -6,6 +7,35 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        &-list {
+            padding-top: 46px;
+
+            ul {
+                padding: 0;
+
+                li {
+                    position: relative;
+                    padding-left: 20px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 6px;
+                        height: 6px;
+                        background-color: red;
+                        border-radius: 50%;
+                    }
+
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 
     &__subtitle {
