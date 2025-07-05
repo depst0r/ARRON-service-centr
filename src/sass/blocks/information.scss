@@ -1,7 +1,30 @@
 .information {
-    &__column {}
+    padding-top: 60px;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__subtitle {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 24px;
+
+        &-text {
+            font-size: 12px;
+            text-align: left !important;
+        }
+    }
 
     &__title {
         text-align: center;
+    }
+
+    &__btn {
+        margin-top: 17px;
     }
 }
