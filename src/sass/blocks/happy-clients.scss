@@ -48,12 +48,7 @@
                 }
             }
 
-            &-button-next,
-            &-button-prev {
-                &::after {
-                    display: none;
-                }
-            }
+
 
             &-button-next,
             &-button-prev {
@@ -65,6 +60,13 @@
 
             &-button-prev {
                 left: 87%;
+            }
+
+            &-button-next,
+            &-button-prev {
+                &::after {
+                    display: none;
+                }
             }
         }
     }
