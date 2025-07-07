@@ -120,9 +120,12 @@
 
 @media screen and (min-width: 1440px) {
     .information {
+        padding-top: 115px;
+
         &__wrapper {
             display: flex;
             justify-content: baseline;
+            gap: 125px;
         }
 
         &__column {
@@ -131,6 +134,7 @@
             text-align: left;
             align-items: start;
             justify-content: start;
+            gap: 8px;
             padding: 0;
 
             &-list {
@@ -149,9 +153,24 @@
                                 display: none;
                             }
                         }
+
+                        &::before {
+                            width: 10px;
+                            height: 10px;
+                        }
                     }
                 }
             }
+        }
+
+        &__btn {
+            width: 329px;
+            height: 81px;
+            margin-top: 32px;
+        }
+
+        &__subtitle-text {
+            width: 288px;
         }
     }
 }
