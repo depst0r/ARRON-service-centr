@@ -1,1 +1,50 @@
-.gift {}
+@use '/src/sass/base/variables.scss'as *;
+
+.gift {
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 38px;
+        padding-top: 79px;
+
+        &-wrapper {
+            margin-top: 61px;
+        }
+
+        &-title {
+            text-align: center;
+        }
+
+        &-button-next,
+        &-button-prev {
+            display: none;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-pagination {
+            bottom: 100px;
+        }
+
+        &-pagination-bullet-active {
+            background-color: $red;
+        }
+    }
+}

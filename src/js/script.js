@@ -106,4 +106,29 @@ const swiper3 = new Swiper(".commpleted-orders__slider", {
 
 });
 
+const swiper4 = new Swiper(".gift__slider-swiper", {
+    modules: [Navigation, Pagination],
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        1440: {
+            slidesPerView: 4,
+        },
+
+    },
+
+});
+
+
+
 gamburgerMenu(menu, close, burger)
