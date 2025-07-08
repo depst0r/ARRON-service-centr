@@ -129,6 +129,21 @@ const swiper4 = new Swiper(".gift__slider-swiper", {
 
 });
 
+const swiper5 = new Swiper(".specialists__slider-swiper", {
+    modules: [Navigation, Pagination],
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 
 gamburgerMenu(menu, close, burger)
