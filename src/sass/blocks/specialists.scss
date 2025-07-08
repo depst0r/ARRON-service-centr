@@ -26,4 +26,19 @@
             background-color: $red;
         }
     }
+
+    &__subtitle {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 40px;
+
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 157%;
+            color: #646464;
+            width: 270px;
+        }
+    }
 }
