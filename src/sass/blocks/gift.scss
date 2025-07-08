@@ -73,3 +73,41 @@
         }
     }
 }
+
+@media screen and (min-width:1440px) {
+    .gift {
+        &__columns {
+            display: none;
+        }
+
+        &__slider-swiper {
+            display: block;
+        }
+
+        .swiper {
+            position: relative;
+
+            &-wrapper {
+                padding-top: 80px;
+            }
+
+            &-button-next,
+            &-button-prev {
+                display: flex;
+                position: absolute;
+                width: 80px;
+                top: 25%;
+            }
+
+            &-button-prev {
+                left: 85%;
+
+            }
+
+            &-title {
+                width: 68%;
+                text-align: left;
+            }
+        }
+    }
+}
