@@ -1,6 +1,9 @@
 @use '/src/sass/base/variables.scss'as *;
 
 .specialists {
+    background: linear-gradient(180deg, #ebf3f8 0%, rgba(235, 243, 248, 0) 100%);
+    align-items: center;
+
     &__title {
         letter-spacing: 0.01em;
         font-weight: 500;
@@ -39,6 +42,70 @@
             line-height: 157%;
             color: #646464;
             width: 270px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .specialists {
+        padding-top: 100px;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &__col {
+            display: flex;
+            flex-direction: row;
+            gap: 22px;
+        }
+
+        &__subtitle {
+            span {
+                font-size: 18px;
+                width: 100%;
+                line-height: 110%;
+            }
+        }
+    }
+
+    .swiper {
+        order: 2;
+        align-items: end;
+        padding-bottom: 30px;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .specialists {
+        &__col {
+            align-items: center;
+            gap: 155px;
+        }
+
+        &__wrapper {
+            align-items: center;
+        }
+
+        &__title {
+            width: 700px;
+            font-size: 24px;
+            align-items: center;
+        }
+
+        &__subtitle {
+            height: 300px;
+
+            span {
+                line-height: 133%;
+            }
         }
     }
 }
