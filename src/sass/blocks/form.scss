@@ -1,0 +1,66 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.form {
+    padding-top: 70px;
+
+    &__date,
+    &__time,
+    &__phone {
+        border: 1px solid #dadada;
+        border-radius: 15px;
+        padding: 11px 24px;
+        width: 260px;
+        height: 48px;
+    }
+
+    &__title-sale {
+        display: block;
+        position: absolute;
+        font-family: "Bebas-Neue";
+        font-weight: 700;
+        font-size: 113px;
+        letter-spacing: -0.01em;
+        color: $orange;
+        text-shadow: 0.125rem 1rem 1.3125rem rgba(255, 107, 0, 0.29);
+        top: 62px;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url('/src/img/sale/fire.svg') no-repeat;
+            width: 207px;
+            height: 242px;
+            left: 75px;
+        }
+    }
+
+    form {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap: 17px;
+        align-items: center;
+        text-align: center;
+        border-radius: 30px;
+        border: 1px solid #c7d1d7;
+        padding: 80px 0 20px 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: $white;
+            width: 100px;
+            height: 30px;
+        }
+
+        span {
+            color: $red;
+        }
+
+        button {
+            width: 260px;
+            height: 48px;
+        }
+    }
+}

@@ -556,20 +556,18 @@
     </section>
     <section class="form">
         <div class="container">
-            <form action="#" method="post">
-
-                <label for="date">Дата:</label>
-                <input type="date" id="date" name="date" required />
-
-
-                <label for="time">Время:</label>
-                <input type="time" id="time" name="time" required />
-
-
-                <label for="phone">Телефон:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" placeholder="Введите номер телефона"
-                    required />
-                <button type="submit">Отправить</button>
+            <form action="#">
+                <div class="form__title-sale">50%</div>
+                <h2 class="title-h2-bold">
+                    Записаться на диагностику
+                    в
+                    <span>удобное</span>
+                    вам время
+                </h2>
+                <input class="form__date" type="text" placeholder="Дата">
+                <input class="form__time" type="text" placeholder="Время">
+                <input class="form__phone" type="text" placeholder="Телефон">
+                <button class="btn-lg" type="submit">Записаться</button>
             </form>
         </div>
     </section>
