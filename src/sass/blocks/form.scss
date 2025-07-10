@@ -115,3 +115,26 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .form {
+        form {
+            display: flex;
+            gap: 100px;
+
+            &::before {
+                left: 2%;
+            }
+        }
+
+        &__inputs {
+            display: grid;
+            gap: 24px;
+        }
+
+        &__title-sale {
+            left: 3%;
+        }
+
+    }
+}
