@@ -120,6 +120,7 @@
     .form {
         form {
             display: flex;
+            flex-direction: row;
             gap: 100px;
 
             &::before {
@@ -136,5 +137,22 @@
             left: 3%;
         }
 
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .form {
+        form {
+            padding: 40px 111px;
+            gap: 220px;
+
+            &:before {
+                left: 5.5%;
+            }
+        }
+
+        &__title-sale {
+            left: 6.5%;
+        }
     }
 }
