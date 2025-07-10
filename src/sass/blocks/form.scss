@@ -22,7 +22,7 @@
         letter-spacing: -0.01em;
         color: $orange;
         text-shadow: 0.125rem 1rem 1.3125rem rgba(255, 107, 0, 0.29);
-        top: 62px;
+        top: -66px;
 
         &:before {
             content: '';
@@ -50,8 +50,9 @@
             content: '';
             position: absolute;
             background: $white;
-            width: 100px;
+            width: 190px;
             height: 30px;
+            top: -18px;
         }
 
         span {
