@@ -64,6 +64,10 @@
             height: 48px;
         }
     }
+
+    &__inputs {
+        display: contents;
+    }
 }
 
 @media screen and (min-width: 768px) {
