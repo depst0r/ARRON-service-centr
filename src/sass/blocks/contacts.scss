@@ -1,0 +1,104 @@
+@use '/src/sass/base/variables.scss'as *;
+
+.contacts {
+    padding-top: 90px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__columns {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .swiper {
+        padding: 0;
+
+        &-slide {
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        &-button-next,
+        &-button-prev {
+            display: none;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &-pagination-bullet-active {
+            background-color: $red;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts {
+        &__title {
+            font-size: 56px;
+            text-align: left;
+        }
+
+        &__columns {
+            flex-direction: row;
+            gap: 60px;
+            align-items: baseline;
+            margin-top: 40px;
+            padding-left: 23px;
+        }
+
+        &__column {
+            &:nth-child(1) {
+                flex: 1 1 50%;
+            }
+
+            &:nth-child(2) {
+                flex: 1 1 50%;
+            }
+        }
+
+        .swiper {
+            padding-bottom: 10%;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contacts {
+        &__columns {
+            padding: 0;
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        .swiper {
+
+            &-button-next,
+            &-button-prev {
+                display: block;
+                position: absolute;
+                width: 48px;
+                height: 48px;
+            }
+
+            &-button-next img {
+                left: 60%;
+            }
+
+            &-button-prev img {
+                left: -60%;
+            }
+
+        }
+    }
+}

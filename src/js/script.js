@@ -145,5 +145,21 @@ const swiper5 = new Swiper(".specialists__slider-swiper", {
     },
 });
 
+const swiper6 = new Swiper(".contacts__slider-swiper", {
+    modules: [Navigation, Pagination],
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 
 gamburgerMenu(menu, close, burger)
