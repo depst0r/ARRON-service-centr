@@ -145,3 +145,54 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .footer {
+
+        &__columns {
+            padding: 55px 69px 42px 71px;
+        }
+
+        &__phone,
+        &__email,
+        &__adress {
+            flex-direction: row;
+        }
+
+        &__phone-number {
+            flex-direction: row;
+        }
+
+        &__slash {
+            display: block;
+        }
+
+        .phone {
+            font-size: 20px;
+        }
+
+        &__email-adress {
+            font-size: 20px;
+        }
+
+        &__adress-text {
+            flex-direction: row;
+            font-size: 20px;
+        }
+
+        &__col {
+            &:nth-child(2) {
+                gap: 190px;
+            }
+        }
+
+        .socials-title {
+            font-size: 20px;
+        }
+
+        &__map {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -81,3 +81,9 @@ img {
         padding: 0 120px;
     }
 }
+
+@media screen and (min-width: 1920px) {
+    .container {
+        padding: 0 210px;
+    }
+}
